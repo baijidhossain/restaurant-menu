@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container mt-xl-5">
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-8 col-md-10 col-sm-12 col-xxl-5">
+
+        <div class="card rounded-0 ">
+
+          <div class="card-body p-0 _card-body">
+
+            <div class="banner-container">
+              <img class="restaurant-banner" src="img/restaurant-banner.jpg" alt="Restaurant Banner">
+
+              <div class="overlay">
+
+                <div class="d-flex justify-content-between align-items-center">
+
+                  <img src="/img/logo.svg" class="logo" alt="logo">
+                  <div>
+                    <button type="button" class="btn  dropdown-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="ri-logout-box-r-line"></i>
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end">
+
+                      <li><button class="dropdown-item" type="button"> <i class="ri-user-3-line"></i> Profile</button>
+                      </li>
+
+                      <li><button class="dropdown-item" type="button"> <i class="ri-add-box-line"></i> Add
+                          Menu</button> </li>
+
+                      <li><button class="dropdown-item" type="button"> <i class="ri-logout-box-line"></i>
+                          Logout</button>
+                      </li>
+
+                    </ul>
+
+                  </div>
+
+                </div>
+
+                <div class="overlay-content">
+                  <h4 class="mb-1 banner-title">Restaurant Name</h4>
+                  <p class="banner-text mb-0">Eastern Arzoo Tower, Level 5; Suite #05-8, 61 Bijoy Nagar Road, Dhaka-1000
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <ul class="d-flex gap-2 list-unstyled banner-container-contact">
+
+              <li class="border-end list-group-item pe-2 opening-time">
+                <i class="ri-time-line"></i> 10:30 am - 10:30 pm
+              </li>
+
+              <li class="list-group-item border-end pe-2 "><i class="ri-phone-line"></i> <a href="tel:01775051601"
+                  class="text-dark text-decoration-none text-white"> 01775051602</a>
+              </li>
+
+              <li class="list-group-item"><i class="ri-contacts-line"></i> Save Contact
+              </li>
+
+            </ul>
+
+            <div class="mt-2">
+
+              <div class="p-3  sticky-search">
+                <div class="input-group rounded shadow-sm">
+                  <span class="input-group-append">
+                    <button class="border border-end-0 btn rounded-end-0 search_button pe-0" type="button">
+                      <i class="ri-menu-search-line"></i>
+                    </button>
+                  </span>
+                  <input class="border border-start-0 form-control search-input" type="search" placeholder="Search">
+                </div>
+
+                <div class="nav mt-2  your-slider" id="nav-tab" role="tablist">
+
+                  <button class="btn  m-2 active text-nowrap menu_active menu_category_button" id="nav-burger-tab"
+                    data-bs-toggle="tab" data-bs-target="#nav-burger" type="button" role="tab"
+                    aria-controls="nav-burger" aria-selected="true">Burger</button>
+
+                  <button class="btn  m-2 text-nowrap menu_category_button menu_active" id="nav-pizza-tab"
+                    data-bs-toggle="tab" data-bs-target="#nav-pizza" type="button" role="tab" aria-controls="nav-pizza"
+                    aria-selected="false">Pizza</button>
+
+                  <button class="btn  m-2 text-nowrap menu_category_button menu_active" id="nav-cheese-tab"
+                    data-bs-toggle="tab" data-bs-target="#nav-cheese" type="button" role="tab"
+                    aria-controls="nav-cheese" aria-selected="false">Cheese</button>
+
+                  <button class="btn  m-2 text-nowrap menu_category_button menu_active" id="nav-salad-tab"
+                    data-bs-toggle="tab" data-bs-target="#nav-salad" type="button" role="tab" aria-controls="nav-salad"
+                    aria-selected="false">Salad</button>
+
+                  <button class="btn  m-2 text-nowrap menu_category_button menu_active" id="nav-tandoori-tab"
+                    data-bs-toggle="tab" data-bs-target="#nav-tandoori" type="button" role="tab"
+                    aria-controls="nav-tandoori" aria-selected="false">Tandoori</button>
+
+                </div>
+
+              </div>
+
+              <div class="tab-content p-0" id="nav-tabContent">
+
+                <div class="tab-pane fade active show" id="nav-burger" role="tabpanel" aria-labelledby="nav-burger-tab">
+                  <ul class="menu-item-list list-unstyled">
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+
+                <div class="tab-pane fade" id="nav-pizza" role="tabpanel" aria-labelledby="nav-pizza-tab">
+                  <ul class="menu-item-list list-unstyled">
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+
+                <div class="tab-pane fade" id="nav-cheese" role="tabpanel" aria-labelledby="nav-cheese-tab">
+                  <ul class="menu-item-list list-unstyled">
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+
+                <div class="tab-pane fade" id="nav-salad" role="tabpanel" aria-labelledby="nav-salad-tab">
+                  <ul class="menu-item-list list-unstyled">
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+
+                <div class="tab-pane fade" id="nav-tandoori" role="tabpanel" aria-labelledby="nav-tandoori-tab">
+                  <ul class="menu-item-list list-unstyled">
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                    <li class="list-item list-group-item">
+                      <div class="list-item-content">
+                        <img class="item-image" src="img/item-image.webp" alt="Special Pizza">
+                        <div class="item-details">
+
+                          <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="item-title">Special Burger</h5>
+                            <div class="item-price">$100</div>
+                          </div>
+
+                          <p class="item-description">A versatile dish loved for its endless topping combinations.</p>
+                          <ul class="item-tags list-unstyled d-flex gap-2">
+                            <li class="text-nowrap"><small class="text_tomato "><i class="ri-fire-line"></i>
+                                Popular</small></li>
+                            <li class="text-nowrap text-dark-emphasis"><small><i class="ri-time-line"></i>
+                                Available</small></li>
+                          </ul>
+                        </div>
+
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+
+            <footer class="footer">
+              <p class="text-dark mb-0 ">Copyright © 2024 <a href="http://gocards.com.bd"
+                  class="text-decoration-none fw-bold" target="_blank">Go Cards</a>.
+                All Rights
+                Reserved.</p>
+            </footer>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Slick Slider JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- Initialize Slick Slider -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.your-slider').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        autoplaySpeed: 500,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        responsive: [{
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        }
+        ]
+      });
+    });
+  </script>
+
+</body>
+
+</html>
